@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" cont
+    <title>Photo Gallery</title>
+    <link href="style.css"
+    rel ="stylesheet">
+    <style>
+        .photos-gallery{
+            width:105%;
+            border:10px solid #757575;
+            padding: 0px;
+            margin: auto;
+            margin-top: 110px;
+            height: 0px;
+        }
+        .photo{
+            float: left;
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+        .image-caption{
+            text-align: center;
+        }
+        .photo:hover{
+            transform: scale(1.2);
+        }
+        
+    </style>
+</head>
+<body>
+    div id=" navbar ">
+        <div class="navbar-brand ">India tourism</div>
+        <div class="nav ">
+            <ul>
+                <li> <a href="home.html ">Home</a></li>
+                <li> <a href="destination.html ">Destination</a></li>
+                <li><a href="states.html ">States</a></li>
+                <li><a href ="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="photos-gallery">
+        <div class="photo">
+            <a href="https://www.pexels.com/photo/brown-sand-casting-shadow-6049071/html">
+         <img src="images/mohara.jpg" widht="350px"
+          height="360px"
+        </a>
+         <div class="image-caption">mohara</div>
+         </div>
+        <div class="photo">
+            <a href="https://www.pexels.com/photo/photo-of-desert-2097442/html">
+         <img src="images/sahara.jpg" widht="400px" 
+         height="360px"
+        </a>
+         <div class="image-caption">sahara</div>
+         </div>
+       
+</div>
+<div class="center">
+   <picture>
+    <source srcset="images/biggerimage.jpg"media="(min-width:1000px)">
+    <source srcset="images/smallerimage.jpg"media="(min-width:200px)">
+    <img src=""width="300pxheight="300px" />
+   </picture>
+</div>
+<div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-IBQN3nQ3bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+    
+</body>
+</html>

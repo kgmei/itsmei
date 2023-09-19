@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Product Image (You can replace the image URL with your product image) -->
+                <img src="iphone.jpg" width="250px" height="100px" alt="Product Image" class="img-fluid">
+                <img src="samsung.jpg" width="450px" height="100px" alt="Product Image" class="img-fluid">
+                <img src="REDMI.jpg" width="250px" height="100px" alt="Product Image" class="img-fluid">
+                <img src="oppo.jpg" width="250px" height="100px" alt="Product Image" class="img-fluid">
+                <img src="blackberry" width="250px" height="100px" alt="Product Image" class="img-fluid">
+            </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Product Specifications -->
+                <h3>iphone</h3>
+                <p>The iPhone is a smartphone made by Apple that combines a computer, iPod, 
+                    digital camera and cellular phone into one device with a touchscreen interface. 
+                    The iPhone runs the iOS operating system, and in 2021 when the iPhone 13 was introduced, 
+                    it offered up to 1 TB of storage and a 12-megapixel camera..</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Color: grey</li>
+                    <li class="list-group-item">Size: 16inch</li>
+                    <li class="list-group-item">material: silicon</li>
+                    <li class="list-group-item">Price: $19.99</li>
+                    
+                </ul>
+                <h3>Samsung</h3>
+                <p>Samsung Galaxy is Samsung Electronics' flagship line of Android smartphones and tablets.
+                    The original Samsung Galaxy smartphone debuted in 2009, and the line's first tablet,
+                     Samsung Galaxy Tab, came out the following year.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Color: grey</li>
+                    <li class="list-group-item">Size: 16inch</li>
+                    <li class="list-group-item">material: silicon</li>
+                    <li class="list-group-item">Price: $19.99</li>
+                </ul>
+                
+                <h3>Redmi</h3>
+                <p>Redmi phones use Xiaomi's MIUI user interface on top of Android. 
+        Models are divided into the entry-level Redmi, the mid-range Redmi Note,
+        and the high-end Redmi K. The unrelated Mi A Android One series is positioned in the same market segment as Redmi devices,
+         despite being part of the upper-range Xiaomi Mi lineup.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Color: grey</li>
+                    <li class="list-group-item">Size: 16inch</li>
+                    <li class="list-group-item">material: silicon</li>
+                    <li class="list-group-item">Price: $19.99</li>
+                </ul>
+
+                <!-- Product Units and Add to Cart -->
+                <div class="input-group mt-3">
+                    <input type="number" class="form-control" min="1" value="1" id="productQuantity">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (Popper.js and Bootstrap.js are required dependencies) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to add the product to the cart
+        function addToCart() {
+            // Get the selected quantity
+            var quantity = parseInt(document.getElementById('productQuantity').value);
+
+            // You can implement the logic to add the product to the cart here.
+            // For this example, we'll simply display an alert with the quantity.
+            alert('Added ' + quantity + ' unit(s) to the cart.');
+        }
+    </script>
+</body>
+
+</html>
